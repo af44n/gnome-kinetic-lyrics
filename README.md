@@ -6,6 +6,11 @@ It sits above the wallpaper (live wallpapers too) and below your windows, and wo
 
 Needs GNOME 49, 50 or 51.
 
+# screenshot
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/34be42df-ce17-432f-a346-f6b40239538e" />
+
+
 ## Install
 
 ```sh
