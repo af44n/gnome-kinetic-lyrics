@@ -14,8 +14,8 @@ Needs GNOME 49, 50 or 51.
 ## Install
 
 ```sh
-git clone https://github.com/af44n/kinetic-lyrics.git
-cd kinetic-lyrics
+git clone https://github.com/af44n/gnome-kinetic-lyrics.git
+cd gnome-kinetic-lyrics
 ./install.sh
 ```
 

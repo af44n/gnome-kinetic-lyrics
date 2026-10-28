@@ -14,7 +14,7 @@ import Gio from "gi://Gio";
 const decode = (data) => new TextDecoder().decode(data);
 const CJK_RE = /[\u3040-\u9FFF\uAC00-\uD7AF]/;
 
-const USER_AGENT = "kinetic-lyrics (https://github.com/af44n/kinetic-lyrics)";
+const USER_AGENT = "kinetic-lyrics (https://github.com/af44n/gnome-kinetic-lyrics)";
 
 function cleanArtist(artist) {
   if (!artist) return "";
