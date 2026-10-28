@@ -1,0 +1,9 @@
+{
+  "uuid": "kinetic-lyrics@af44n",
+  "name": "Kinetic Lyrics",
+  "description": "Synced lyrics painted on your desktop in an expressive, kinetic-typography style. Each line is composed from words of different sizes and fonts that pop in as they're sung. Works with any MPRIS player (Spotify, browsers, mpv, …).",
+  "url": "https://github.com/af44n/kinetic-lyrics",
+  "settings-schema": "org.gnome.shell.extensions.kinetic-lyrics",
+  "shell-version": ["49", "50", "51"],
+  "version": 1
+}

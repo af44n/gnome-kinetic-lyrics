@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.kinetic-lyrics" path="/org/gnome/shell/extensions/kinetic-lyrics/">
+
+    <!-- Fonts & colour -->
+    <key name="caps-font" type="s">
+      <default>'League Gothic'</default>
+      <summary>Font for the big words</summary>
+    </key>
+    <key name="script-font" type="s">
+      <default>'Nanum Brush Script'</default>
+      <summary>Font for the small words</summary>
+    </key>
+    <key name="uppercase" type="b">
+      <default>true</default>
+      <summary>Write the big words in capitals</summary>
+    </key>
+    <key name="script-max-letters" type="i">
+      <range min="0" max="6"/>
+      <default>2</default>
+      <summary>Words up to this many letters use the script font</summary>
+    </key>
+    <key name="paint-color" type="s">
+      <default>'#e8962c'</default>
+      <summary>Lyrics colour</summary>
+    </key>
+    <key name="text-shadow" type="b">
+      <default>true</default>
+      <summary>Soft shadow behind the words</summary>
+    </key>
+
+    <!-- Sizes -->
+    <key name="hero-size" type="i">
+      <range min="20" max="400"/>
+      <default>150</default>
+      <summary>Size of the longest word in a line (px)</summary>
+    </key>
+    <key name="big-size" type="i">
+      <range min="10" max="400"/>
+      <default>108</default>
+      <summary>Size of other long words (px)</summary>
+    </key>
+    <key name="mid-size" type="i">
+      <range min="10" max="400"/>
+      <default>88</default>
+      <summary>Size of short words (px)</summary>
+    </key>
+    <key name="script-size" type="i">
+      <range min="10" max="400"/>
+      <default>78</default>
+      <summary>Size of script words (px)</summary>
+    </key>
+    <key name="word-gap" type="i">
+      <range min="0" max="120"/>
+      <default>18</default>
+      <summary>Space between words (px)</summary>
+    </key>
+
+    <!-- Layout -->
+    <key name="position" type="s">
+      <choices>
+        <choice value="left"/>
+        <choice value="center"/>
+        <choice value="right"/>
+      </choices>
+      <default>'right'</default>
+      <summary>Where the lyrics sit on screen</summary>
+    </key>
+    <key name="horizontal-margin" type="i">
+      <range min="0" max="1000"/>
+      <default>90</default>
+      <summary>Distance from the screen edge (px)</summary>
+    </key>
+    <key name="vertical-offset" type="i">
+      <range min="-1000" max="1000"/>
+      <default>0</default>
+      <summary>Move up (negative) or down (positive) from the centre (px)</summary>
+    </key>
+    <key name="column-width" type="i">
+      <range min="10" max="100"/>
+      <default>40</default>
+      <summary>Column width as a percentage of the screen</summary>
+    </key>
+    <key name="max-width" type="i">
+      <range min="200" max="4000"/>
+      <default>780</default>
+      <summary>Maximum column width (px)</summary>
+    </key>
+    <key name="row-align" type="s">
+      <choices>
+        <choice value="start"/>
+        <choice value="center"/>
+        <choice value="end"/>
+      </choices>
+      <default>'end'</default>
+      <summary>How each row of words is aligned in the column</summary>
+    </key>
+    <key name="hide-in-overview" type="b">
+      <default>true</default>
+      <summary>Hide the lyrics in the Activities overview</summary>
+    </key>
+
+    <!-- Animation & sync -->
+    <key name="word-by-word" type="b">
+      <default>true</default>
+      <summary>Reveal words one by one as they are sung</summary>
+    </key>
+    <key name="word-animation-ms" type="i">
+      <range min="0" max="2000"/>
+      <default>280</default>
+      <summary>Length of each word's pop-in (ms)</summary>
+    </key>
+    <key name="word-spread" type="i">
+      <range min="10" max="100"/>
+      <default>60</default>
+      <summary>For lyrics without word timing: share of the line over which words appear (%)</summary>
+    </key>
+    <key name="line-fade-ms" type="i">
+      <range min="0" max="2000"/>
+      <default>250</default>
+      <summary>Fade in/out time when lyrics appear or disappear (ms)</summary>
+    </key>
+    <key name="wobble" type="b">
+      <default>true</default>
+      <summary>Hand-painted tilt and bounce on each word</summary>
+    </key>
+    <key name="lyrics-offset-ms" type="i">
+      <range min="-10000" max="10000"/>
+      <default>0</default>
+      <summary>Timing offset; positive shows lyrics earlier (ms)</summary>
+    </key>
+  </schema>
+</schemalist>
